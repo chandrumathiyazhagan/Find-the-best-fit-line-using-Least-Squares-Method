@@ -39,10 +39,10 @@ for i in range(len(x)):
 m = num/denom
 b = y_mean - m*x_mean
 print(m, b)
-y_pred = m*x + b
-print(y_pred)
+y_predicted = m*x + b
+print(y_predicted)
 plt.scatter(x, y)
-plt.plot(x, y_pred, color = "blue")
+plt.plot(x, y_predicted, color = "blue")
 plt.show()
 ```
 ## Output:
