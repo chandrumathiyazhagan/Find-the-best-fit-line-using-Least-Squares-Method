@@ -31,11 +31,12 @@ x = np.array(eval(input()))
 y = np.array(eval(input()))
 x_mean = np.mean(x)
 y_mean = np.mean(y)
-num, den = 0, 0
+num = 0
+denom = 0
 for i in range(len(x)):
   num += (x[i]-x_mean)*(y[i]-y_mean)
-  den += (x[i]-x_mean)**2
-m = num/den
+  denom += (x[i]-x_mean)**2
+m = num/denom
 b = y_mean - m*x_mean
 print(m, b)
 y_pred = m*x + b
@@ -46,7 +47,8 @@ plt.show()
 ```
 ## Output:
 
-![ml](https://github.com/chandrumathiyazhagan/Find-the-best-fit-line-using-Least-Squares-Method/assets/119393023/c56ad053-499a-4260-8798-0de20a3e0f56)
+![Screenshot 2024-02-20 152328](https://github.com/chandrumathiyazhagan/Find-the-best-fit-line-using-Least-Squares-Method/assets/119393023/2d0a9905-0194-40ac-8d09-2ef8894ce1ac)
+
 
 ## Result:
 Thus the univariate Linear Regression was implemented to fit a straight line using least squares using python programming.
